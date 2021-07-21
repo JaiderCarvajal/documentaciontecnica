@@ -308,9 +308,82 @@
 
         <section class="main-section" id="while_statement">
             <header>While Statement</header>
-            
+            <article>
+                Una instrucción while ejecuta sus declaraciones siempre que una condición especificada 
+                se evalúe como verdadera. Una declaración while tiene el siguiente aspecto:
+                
+                <code>while (condition) statement</code>
+
+                Si la condición se vuelve falsa, la declaración dentro del ciclo deja de ejecutarse 
+                y el control pasa a la declaración que sigue al ciclo.
+
+                <p>La prueba de condición ocurre antes de que se ejecute la instrucción en el ciclo. 
+                   Si la condición devuelve verdadera, se ejecuta la instrucción y la condición se 
+                   prueba nuevamente. Si la condición devuelve falso, la ejecución se detiene y el 
+                   control se pasa a la instrucción que sigue a while.</p>
+                
+                <p>Para ejecutar varias sentencias, use una sentencia de bloque ({...}) para agrupar 
+                   esas sentencias.</p>
+                
+                Ejemplo:
+
+                <p>El siguiente ciclo while se repite siempre que n sea menor que tres:</p>
+
+                <code>var n = 0; var x = 0; while (n < 3) { n++; x += n; }</code>
+
+                <p>Con cada iteración, el ciclo incrementa n y agrega ese valor a x. Por tanto, 
+                   x y n toman los siguientes valores:</p>
+                
+                <ul>
+                    <li>Después de la primera pasada: n = 1 y x = 1</li>
+                    <li>Después de la segunda pasada: n = 2 y x = 3</li>
+                    <li>Después de la tercera pasada: n = 3 y x = 6</li>
+                </ul>
+
+                <p>Después de completar la tercera pasada, la condición n < 3 ya no es cierto, 
+                   por lo que el ciclo termina.</p>
+            </article>
         </section>
-    </main>
-  
+
+        <section class="main-section" id="Function_declarations">
+            <header>Declaraciones de Funciones</header>
+            <article>
+                Una definición de función (también llamada declaración de función o declaración 
+                de función) consta de la palabra clave de función, seguida de:
+
+                <ul>
+                    <li>El nombre de la función.</li>
+                    <li>Una lista de argumentos de la función, entre paréntesis y separados por comas.</li>
+                    <li>Las declaraciones de JavaScript que definen la función, encerradas entre 
+                        corchetes, {}.</li>
+                </ul>
+
+                <p>Por ejemplo, el siguiente código define una función simple llamada cuadrado:</p>
+
+                <code>function square(number) { return number * number; }</code>
+
+                <p>La función cuadrado toma un argumento, llamado número. La función consta de una 
+                   declaración que dice devolver el argumento de la función (es decir, el número) 
+                   multiplicado por sí mismo. La declaración de retorno especifica el valor devuelto 
+                   por la función.</p>
+                
+                <code>return number * number;</code>
+
+                <p>Los parámetros primitivos (como un número) se pasan a las funciones por valor; 
+                   el valor se pasa a la función, pero si la función cambia el valor del parámetro, 
+                   este cambio no se refleja globalmente o en la función que llama.</p>
+                
+            </article>
+        </section>
+
+        <section class="main-section" id="Reference">
+            <header>Referencia</header>
+            <article>
+                <ul>
+                    <li>Toda la documentación de esta página está extraída de <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank">MDN</a></li>
+                </ul>
+            </article>
+        </section>
+    </main>  
 </body>  
 </html>
